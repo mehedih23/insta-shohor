@@ -16,7 +16,7 @@ const isLiked = (id) => {
 };
 
 const addToLiked = (id) => {
-  likedPostsId.push(id); // Fist Debug //
+  likedPostsId.push(id); // Fist bug Done//
   showPosts(posts);
 };
 
@@ -27,7 +27,7 @@ const reportPost = (id) => {
 };
 
 const displayContent = (text) => {
-  return text.length < 30 ? text : text.slice(0, 30) + "<span class='fw-bold'>... read more</span>"; // Third Debug Done //
+  return text.length < 30 ? text : text.slice(0, 30) + "<span class='fw-bold'>... read more</span>"; // Third bug Done //
 };
 
 const switchTab = (id) => {
@@ -63,7 +63,7 @@ const createPost = (post) => {
                     class="post__avatar"
                   >
                     <img src="${post.userImage}" alt="User Picture" />
-                  </a> <!-- Second Debug Done --->
+                  </a> <!-- Second bug Done --->
                   <a href="#" class="post__user">phero</a>
                 </div>
 
@@ -119,9 +119,9 @@ const createPost = (post) => {
                   <div class="post__description">
                     <small>
                       <a class="post__name--underline" href="#">
-                          ${post.comments[0]?.user} <!-- Fourth Debug Done --->
+                          ${post.comments[0]?.user} <!-- Fourth bug Done --->
                       </a>
-                      ${post.comments[0]?.text} <!-- Fourth Debug Done --->
+                      ${post.comments[0]?.text} <!-- Fourth bug Done --->
                     </small>
                   </div>
                   <span class="post__date-time">30 minutes ago</span>
@@ -141,7 +141,7 @@ const showPosts = (posts) => {
   });
 };
 
-const displayLikedPosts = () => { // Sixth Debug Done //
+const displayLikedPosts = () => { // Sixth bug Done //
   document.getElementById("liked").innerHTML = '';
   const likedPosts = getLikedPosts();
   likedPosts.forEach((post) => {
@@ -150,7 +150,7 @@ const displayLikedPosts = () => { // Sixth Debug Done //
   });
 };
 
-const displayReportedPosts = () => { // Fifth Debug Done //
+const displayReportedPosts = () => { // Fifth bug Done //
   document.getElementById("reported").innerHTML = '';
   const reportedPosts = getReportedPosts();
 
