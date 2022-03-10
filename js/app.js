@@ -62,8 +62,8 @@ const createPost = (post) => {
                     target="_blank"
                     class="post__avatar"
                   >
-                    <img src="${image}" alt="User Picture" />
-                  </a>
+                    <img src="${post.userImage}" alt="User Picture" />
+                  </a> <!-- Second Debug Done --->
                   <a href="#" class="post__user">phero</a>
                 </div>
 
